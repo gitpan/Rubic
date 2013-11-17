@@ -1,0 +1,30 @@
+Revision history for Rubic
+
+0.08     Sun Nov 17 14:06:01 2013
+       * Rename to rubic
+
+0.07     Sat Nov 17 13:40:18 2013
+       * Fix restart command using Ubic instead of $service object
+       * Add support for getting cached status
+       * Improved documentation
+
+0.06     Tue Nov  5 19:19:28 2013
+       * Add support for /services?flat=1 response
+
+0.05     Sat Nov  2 11:39:22 2013
+       * Fix remote_servers as plain string
+       * Change HTML from list to table
+
+0.04     Fri Nov  1 18:21:33 2013
+       * Add HTML interface
+       * Add proxy commands to other servers
+
+0.03     Fri Nov  1 15:12:22 2013
+       * Add support for MOJO_CONFIG for script/ubic-remote-admin
+
+0.02     Fri Nov  1 13:53:51 2013
+       * Add script/ubic-remote-admin
+
+0.01     Fri Nov  1 13:39:58 2013
+       * Add /services resource
+       * Add /service/#name/:action resource

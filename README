@@ -1,0 +1,63 @@
+NAME
+    Rubic - Remote admin tool for ubic
+
+VERSION
+    0.08
+
+DESCRIPTION
+    The distribution contains a web server "rubic" which allow you to run
+    Ubic commands using a REST API. It also has a HTML based web interface
+    or easy administration for humans.
+
+    This is Ubic::Ping::Service on steroids.
+
+    See also Mojolicious::Plugin::Ubic.
+
+SYNOPSIS
+      $ rubic daemon --listen http://*:5000
+
+    Look for "Base path" in the output. Example:
+
+      [Sun Nov 17 13:45:06 2013] [info] Base path: /e3927cec591094d8294dfff30f1110f3
+
+    Point your browser at
+    "http://localhost:5000/e3927cec591094d8294dfff30f1110f3"
+
+  Environment variables
+    *   UBIC_BASE_PATH
+
+        Set your own "Base path" instead of using the auto-generated. This
+        should be something very long to make it "impossible" to brute
+        force.
+
+    *   MOJO_CONFIG
+
+        Possible to configure the application using a config file in Perl
+        format.
+
+FAQ
+    What is ubic?
+        See Ubic::Manual::FAQ.
+
+    Why this weird "Base path"?
+        Just to make it a bit safer, without requiring user/password. It is
+        possible to make it safer by mouting the plugin in your own
+        Mojolicious application, where you can add any sort of
+        authentication you want.
+
+    What about SSL support?
+        It should be supported out of the box if you install
+        IO::Socket::SSL:
+
+          $ rubic daemon --listen https://*:5000
+
+        See "listen" in Mojo::Server::Daemon for more inforation about the
+        "--listen" argument.
+
+COPYRIGHT
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
+AUTHOR
+    Jan Henning Thorsen - "jhthorsen@cpan.org"
+
