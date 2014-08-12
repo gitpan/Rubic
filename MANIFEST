@@ -1,0 +1,17 @@
+.ship.conf
+Changes
+cpanfile
+lib/Mojolicious/Plugin/Ubic.pm
+lib/Rubic.pm
+Makefile.PL
+MANIFEST			This list of files
+README
+README.pod
+script/rubic
+t/00-basic.t
+t/rubic.conf
+t/rubic.t
+t/service.t
+t/services.t
+META.yml                                 Module YAML meta-data (added by MakeMaker)
+META.json                                Module JSON meta-data (added by MakeMaker)

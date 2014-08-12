@@ -3,12 +3,12 @@ abstract: 'Remote admin tool for ubic'
 author:
   - 'Jan Henning Thorsen <jhthorsen@cpan.org>'
 build_requires:
-  Test::More: 0.9
+  Test::More: 0.88
 configure_requires:
   ExtUtils::MakeMaker: 0
 dynamic_config: 1
 generated_by: 'ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.120921'
-license: perl
+license: artistic_2
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
@@ -18,11 +18,9 @@ no_index:
     - t
     - inc
 requires:
-  Mojolicious: 4.30
-  Ubic: 1.50
+  perl: 0
 resources:
   bugtracker: https://github.com/jhthorsen/rubic/issues
-  homepage: https://metacpan.org/module/Rubic
-  license: http://dev.perl.org/licenses/
-  repository: https://github.com/jhthorsen/rubic
-version: 0.0803
+  homepage: https://github.com/jhthorsen/rubic
+  repository: https://github.com/jhthorsen/rubic.git
+version: 0.0804
