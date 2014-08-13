@@ -18,9 +18,10 @@ no_index:
     - t
     - inc
 requires:
-  perl: 0
+  Mojolicious: 5.0
+  Ubic: 1.50
 resources:
   bugtracker: https://github.com/jhthorsen/rubic/issues
   homepage: https://github.com/jhthorsen/rubic
   repository: https://github.com/jhthorsen/rubic.git
-version: 0.0804
+version: 0.0805
